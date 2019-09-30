@@ -12,14 +12,16 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.75in,top=0.75in,right=0.75in,bottom=0.75in]{geometry} % Document margins
+\usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry} 
+\usepackage{hyperref}
+% Document margins
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 %\usepackage{helvet}
 %\renewcommand{\familydefault}{\sfdefault}
 \name{ANNE EN-TZU YANG} % Your name
-\address{Minneapolis, MN $\vert\vert$ anneyanget@gmail.com $\vert\vert$ (617) 309-9419} % Your address
-\address{github.com/aety $\vert\vert$ linkedin.com/in/aetyang $\vert\vert$ sites.google.com/view/aety} % Your phone number and email
+\address{Minneapolis, MN $\vert$ anneyanget@gmail.com $\vert$ (617) 309-9419} % Your address
+\address{github.com/aety $\vert$ linkedin.com/in/aetyang $\vert$ sites.google.com/view/aety} % Your phone number and email
 
 \begin{document}
 
@@ -33,9 +35,9 @@
 \begin{rSection}{Skills}
 	\begin{itemize}
 		\item {\bf Languages}{, Python, SQL, Matlab, LaTeX}
-		\item {\bf Packages}{, Pandas, Flask, Numpy, Scipy, TensorFlow, PostgreSQL}
-		\item {\bf Tools}{, Git, Jupyter Notebook, Linux}
-		\item {\bf Knowledge}{, computer vision [what type], analysis, machine learning (flavors), statistics (GLM, ANOVA), communications, mathematics, visualization, deep learning, natural language processing, software development, neural network, convolutional neural network [a lot more details, regressions, classifications, models, tools]}
+		\item {\bf Packages}{, Pandas, Flask, Numpy, Scipy, scikit-learn, PostgreSQL, Google Developers Charts, MATLAB regionprops, Facebook Prophet}
+		\item {\bf Tools}{, Git, Github, Jupyter Notebook, Linux, API}
+		\item {\bf Knowledge}{, medical imaging (DICOM), machine learning (convolutional neural network, random forest regressors), statistics (t-test, GLM, ANOVA), mathematics, data visualization}
 		
 	\end{itemize}
 \end{rSection}
@@ -51,28 +53,28 @@
 	\vspace{-5mm}
 	\begin{itemize}
 		\setlength\itemsep{-1.75em}
-		\item Developed [a webapp to depict predicted] the air quality inside Paris metro stations to help passengers manage health risks [safety risks and measures].\\
-		\item Utilized PROPHET and ARIMA for time series analysis, resulting in XX\% forecast accuracy.\\
-		\item Identified predictors for R = XX correlation using TensorFlow's neural network regression.\\
-		\item WebApp stuff.
+		\item Deployed a web app to recommend best time to ride Paris metro based on hourly air quality prediction.\\
+		\item Utilized Prophet for time series forecast, resulting in cross-validation error of 12\% (SMAPE).\\
+		\item Identified predictors correlated to air quality by $R^2 = 0.96$ using scikit-learn's random forest regressor.\\
+		\item Presented results as interactive figures to intuitively inform passengers of health risks.
 	\end{itemize}	
 	
 	\item {\bf Postdoc}{, Institute for Intelligent Systems and Robotics \textit{(Paris, France)}} \hfill {\em 2018/09 - 2019/08}\\
 	\vspace{-5mm}
 	\begin{itemize}
 		\setlength\itemsep{-1.75em}
-		\item  Designed markers to aid the detection of the shape and orientation of flexible surgical tools from 2D X-ray images [SIGNIFICANCE].\\ 
-		\item  Employed convolutional neural network to process images and reconstruct 3D shape and orientation angles ($\sim 10 ms$/frame) (errors $< 1 ^\circ$).\\
-		\item  Published results at IEEE and local surigcal robotic conferences, \textit{tinyurl.com/cath2019}[maybe the poster too?].
+		\item  Designed a marker system for 3D intraoperative surgical tool tracking from 2D X-ray images.\\ 
+		\item  Employed convolutional neural network to reconstruct 3D orientation at $\sim 10 ms$/frame (errors $< 1 ^\circ$).\\
+		\item  Published results at IEEE and European surgical robotics conferences, \textit{\href{tinyurl.com/trackcath19}{tinyurl.com/trackcath19}}.
 	\end{itemize}
 	
 	\item {\bf PhD Intern}{, Sanofi \textit{(Bridgewater, NJ)}} \hfill {\em 2017/06 - 2017/08}\\
 	\vspace{-5mm}
 	\begin{itemize}
 		\setlength\itemsep{-1.75em}	
-		\item Wrote a sub-function to revise an existing model on asthma formation and treatment [more details/improvement].\\
-		\item Performed t-test and ANOVA test on clinical trial data on asthma medication.\\ 
-		\item Wrote MATLAB scripts to automate statistical tests and data visualization[save time and energy][takeaway].
+		\item Wrote a sub-function to add another protein into existing models on asthma formation and treatment.\\
+		\item Performed t-test and ANOVA test on 10k entries of clinical trial data of asthma medication.\\ 
+		\item Wrote MATLAB scripts to automate statistical tests and data visualization to expedite data analysis.
 	\end{itemize}
 
 	\item {\bf PhD Candidate}{, Northwestern University \textit{(Evanston, IL)}} \hfill {\em 2012/09 - 2018/08}\\
@@ -80,9 +82,9 @@
 	\begin{itemize}
 		\setlength\itemsep{-1.75em}
 		\item Investigated the neural pathway of rat whiskers to understand human's sense of touch.\\
-		\item Constructed [what kind of models?] models in Python and MATLAB to quantify mechanical signals on the whiskers and resultant neural responses in the brain when rats sensed contact or airflow.\\
-		\item Predicted 4 categories of neural responses from 420 sets of 100-ms data sampled at 10kHz.[accuracy/precision]\\
-		\item Summarized trends in data from $>500$ rat whiskers, and built predictive model for rat whisker geometry given identity.	
+		\item Constructed tapered beam mechanical models to quantify forces and moments on the whiskers and resultant neural responses in the brain when rats sensed contact or airflow.\\
+		\item Predicted 4 categories of neural responses ($R^2=0.93$) from 420 sets of 100-ms data sampled at 10kHz.\\
+		\item Built predictive models for whisker geometry by whisker identity using data from $>500$ rat whiskers.	
 	\end{itemize}
 
 	
