@@ -25,7 +25,11 @@
 %\renewcommand{\familydefault}{\sfdefault}
 \name{ANNE EN-TZU YANG} % Your name
 \address{Minneapolis, MN $\vert$ anneyanget@gmail.com $\vert$ (617) 309-9419} % Your address
-\address{\href{http://github.com/aety}{github.com/aety} $\vert$ \href{http://linkedin.com/in/aetyang}{linkedin.com/in/aetyang} $\vert$ \href{http://sites.google.com/view/aety}{sites.google.com/view/aety}} % Your phone number and email
+\address{
+	\href{http://aety.github.io}{aety.github.io} $\vert$
+	\href{http://linkedin.com/in/aetyang}{linkedin.com/in/aetyang} $\vert$ 
+	\href{http://github.com/aety}{github.com/aety}
+}
 
 \begin{document}
 	%----------------------------------------------------------------------------------------
@@ -33,9 +37,9 @@
 	%----------------------------------------------------------------------------------------
 	\begin{rSection}{Skills}
 		\begin{itemize}[leftmargin=0em]
-			\item {\bf Languages}{. Matlab, Python, SQL, LaTeX, HTML, Javascript}
-			\item {\bf Packages}{.Pandas, Flask, Numpy, Scipy, scikit-learn, statsmodels, BeautifulSoup, Prophet, PostgreSQL, \\SQLAlchemy, matplotlib, Google Developers Charts, Matlab regionprops, Matlab nftool}
-			\item {\bf Tools}{. Git, Github, Jupyter Notebook, AWS (RDS, EC2, Route 53), Linux, API, 3Dslicer}
+			\item {\bf Languages}{. Matlab, Python, SQL, LaTeX, HTML, JavaScript}
+			\item {\bf Packages}{. Pandas, Flask, Numpy, Scipy, scikit-learn, statsmodels, NLTK, psycopg2, BeautifulSoup, Prophet, PostgreSQL, SQLAlchemy, matplotlib, Google Developers Charts, Matlab regionprops, Matlab nftool}
+			\item {\bf Tools}{. Git, Github, Anaconda, Jupyter Notebook, Spyder, Azure (PostgreSQL DB, VM, NSG, blob storage), MS SQL Management Studio, AWS (RDS, EC2, Route 53), 3Dslicer, MeshLab}
 			%\item {\bf Knowledge}{. medical imaging (DICOM), machine learning (convolutional neural network, neural netwrok regression, random forest regression), autoregressive integrated moving average}
 			
 		\end{itemize}
@@ -48,14 +52,26 @@
 	\begin{rSection}{Experience}
 		
 		\begin{itemize}[leftmargin=0em]
-			\item {\bf Data Science Fellow}{. Insight Data Science \textit{(Minneapolis, MN)}} \hfill {\em 09/2019 - present}\\
+			
+			\item {\bf Senior Data Scientist}{. 3M \textit{(Maplewood, MN)}} \hfill {\em 02/2020 - present}\\
+			\vspace{-5mm}
+			\begin{itemize}
+				\setlength\itemsep{-1.75em}			
+				\item Constructed a self-updating dashboard on Azure VM displaying the performance of a treatment planning algorithm, based on metrics extracted from the blob of each individual instance.\\
+				\item Implemented Natural Language Processing to inform Oral Care's responses to worldwide customer concerns amid a pandemic, as part of the Division's Covid-19 Task Force.\\
+				\item Communicated daily across R\&D, software, manufacturing, data warehouse, etc.).\\
+				\item Led the first effort of historical data analyses on 3M's digital orthodontics patients.\\
+				\item Facilitated discussions with orthodontists, as both customer hearing and consultant's feedback for R\&D).
+			\end{itemize}	
+		
+			\item {\bf Data Science Fellow}{. Insight Data Science \textit{(Remote)}} \hfill {\em 09/2019 - 10/2019}\\
 			\vspace{-5mm}
 			\begin{itemize}
 				\setlength\itemsep{-1.75em}
-				\item Deployed an \textit{html} \href{http://ParisMetro.xyz}{web app} recommending best time to ride Paris metro based on air quality prediction.\\
+				\item Deployed an \textit{html} {web app} recommending best time to ride Paris metro based on air quality prediction.\\
 				\item Utilized \textit{Prophet} to predict hourly PM10 (pollutant) concentration, with an SMAPE error of 12\% \\
-				\item Forecast results are stored on \textit{AWS} in \textit{PostgreSQL} for web app queries via \textit{Flask}.\\
-				\item Identified predictors correlated to air quality by R\textsuperscript{2} = 0.96 using \textit{scikit-learn's random forest regressor}.\\
+				%\item Forecast results are stored on \textit{AWS} in \textit{PostgreSQL} for web app queries via \textit{Flask}.\\
+				%\item Identified predictors correlated to air quality by R\textsuperscript{2} = 0.96 using \textit{scikit-learn's random forest regressor}.\\
 				\item Visualized results as \textit{Google Charts} figures to provide intuitive information for health risks management.
 			\end{itemize}	
 			
@@ -63,7 +79,7 @@
 			\vspace{-5mm}
 			\begin{itemize}
 				\setlength\itemsep{-1.75em}
-				\item  Designed a system of \href{https://tinyurl.com/yxk4jou4}{helical markers} that enabled the 3D tracking of intraoperative surgical tools from individual 2D X-ray images.\\ 
+				\item  Designed a system of \href{https://tinyurl.com/yxk4jou4}{markers} to track 3D intraoperative surgical tools from individual 2D X-ray images.\\ 
 				\item  Trained \textit{convolutional neural networks} to successfully reconstruct deformable 3D shape and orientation at $\sim$ 10 ms/frame (errors $<$1$^\circ$) with medical (\textit{DICOM}) images acquired from an operating room.
 			\end{itemize}
 			
@@ -72,19 +88,19 @@
 			\begin{itemize}
 				\setlength\itemsep{-1.75em}	
 				\item Collaborated with pharmacologists and immunologists on adding a new module to existing computational model to simulate periostin (protein) in asthma formation and treatment.\\
-				\item Wrote \textit{Matlab} scripts to automate statistical tests and data visualization to expedite data analysis on 10k entries of clinical trial data.
+				\item Wrote \textit{Matlab} scripts to automate statistical tests and visualization on 10k entries of clinical trial data.
 			\end{itemize}
 			
 			\item {\bf PhD Candidate}{. Northwestern University \textit{(Evanston, IL)}} \hfill {\em 09/2012 - 08/2018}\\
 			\vspace{-5mm}
 			\begin{itemize}
 				\setlength\itemsep{-1.75em}
-				\item Investigated interdisciplinarily the neural pathway of rat whiskers to understand human's sense of touch.\\
+				%\item Investigated interdisciplinarily the neural pathway of rat whiskers to understand human's sense of touch.\\
 				\item Created a \href{https://www.youtube.com/watch?v=EPuThXPd-qw}{\textit{MEMS}-sensor} able to detect mechanical signals on a rat whisker of $<$200 $\mu$m diameter.\\
 				\item Initiated a multi-university collaboration that later won a \$1M NSF \href{https://www.nsf.gov/news/mmg/mmg_disp.jsp?med_id=132588}{grant}.\\
 				\item Constructed static and dynamic models of tapered beams in \textit{Matlab} and \textit{Python} to quantify forces and moments on the whiskers when undergoing contact or airflow.\\
-				\item Predicted the timing and magnitude of 4 categories of neural responses (R\textsuperscript{2}=0.93) from 420 sets of 100-ms data sampled at 10kHz.\\
-				\item Analyzed data of $>$500 rat whiskers and built predictive models of whisker geometry by whisker identity.	
+				\item Predicted the time and scale of neural signals (R\textsuperscript{2}=0.93) from 420 sets of 100-ms data sampled at 10kHz.\\
+				%\item Analyzed data of $>$500 rat whiskers and built predictive models of whisker geometry by whisker identity.	
 			\end{itemize}
 			
 			
@@ -100,24 +116,12 @@
 	\begin{rSection}{Education}
 		%--copy and paste this region  if you need more--
 		\begin{itemize}[leftmargin=0em]
-			\item {\bf PhD}{. Northwestern University} \textit{(Evanston, IL)} \hfill {\em 09/2012 - 08/2018} 
-			\vspace{-3mm}
-			\begin{itemize}
-				\setlength\itemsep{-3em}
-				\item Mechanical Engineering
-			\end{itemize}
-			\item {\bf Certificate}{. Kellogg School of Management} \textit{(Evanston, IL)} \hfill {\em 06/2016 - 08/2016} 
-			\vspace{-3mm}
-			\begin{itemize}
-				\setlength\itemsep{-3em}
-				\item Management for Scientists and Engineers
-			\end{itemize}
-			\item {\bf BS}{. National Taiwan University} \textit{(Taipei, Taiwan)} \hfill {\em 09/2008 - 06/2012} 
-			\vspace{-3mm}
-			\begin{itemize}
-				\setlength\itemsep{-3em}
-				\item Mechanical Engineering
-			\end{itemize}
+			\item {\bf PhD in Mechanical Engineering}{. Northwestern University} \textit{(Evanston, IL)} \hfill {\em 09/2012 - 08/2018} 
+			\vspace{-0mm}
+			\item {\bf Certificate of Management}{. Kellogg School of Management} \textit{(Evanston, IL)} \hfill {\em 06/2016 - 08/2016} 
+			\vspace{-0mm}
+			\item {\bf BS in Mechanical Engineering}{. National Taiwan University} \textit{(Taipei, Taiwan)} \hfill {\em 09/2008 - 06/2012} 
+			\vspace{-0mm}
 		\end{itemize}
 		
 		
