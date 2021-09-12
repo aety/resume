@@ -1,34 +1,50 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Important note:
-% This template requires the resume.cls file to be in the same directory as the
-% .tex file. The resume.cls file provides the resume style used for structuring the
-% document.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
 \documentclass{resume} % Use the custom resume.cls style
-
 \usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry} 
 \usepackage{hyperref}
 \usepackage{enumitem}
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage{helvet}
 
+%  FOR URL ICON ---------------------
+\usepackage{tikz}
+\newcommand{\ExternalLink}{%
+	\tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{% 
+		\begin{scope}[x=1ex, y=1ex]
+			\clip (-0.1,-0.1) 
+			--++ (-0, 1.2) 
+			--++ (0.6, 0) 
+			--++ (0, -0.6) 
+			--++ (0.6, 0) 
+			--++ (0, -1);
+			\path[draw, 
+			line width = 0.5, 
+			rounded corners=0.5] 
+			(0,0) rectangle (1,1);
+		\end{scope}
+		\path[draw, line width = 0.5] (0.5, 0.5) 
+		-- (1, 1);
+		\path[draw, line width = 0.5] (0.6, 1) 
+		-- (1, 1) -- (1, 0.6);
+	}
+}
+
 % Document margins
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 
 \name{ANNE EN-TZU YANG} % Your name
-\address{Minneapolis, MN, USA $\vert$ anneyanget@gmail.com $\vert$ +1 (617) 309-9419} % Your address
+\address{Cupertino, CA, USA $\vert$ anneyanget@gmail.com $\vert$ +1 (617) 309-9419} % Your address
 \address{
-	\href{http://aety.github.io}{aety.github.io} $\vert$
-	\href{http://linkedin.com/in/aetyang}{linkedin.com/in/aetyang} $\vert$ 
-	\href{http://github.com/aety}{github.com/aety}
+	\href{https://aety.github.io}{Personal Website \ExternalLink} $\vert$
+	\href{https://linkedin.com/in/aetyang}{LinkedIn \ExternalLink} $\vert$ 
+	\href{https://github.com/aety}{GitHub \ExternalLink} $\vert$ 
+	\href{https://scholar.google.com/citations?user=1P-j6XgAAAAJ&hl}{Publications \ExternalLink}
 }
+
 
 \begin{document}
 	%----------------------------------------------------------------------------------------
@@ -36,9 +52,11 @@
 	%----------------------------------------------------------------------------------------
 	\begin{rSection}{Skills}
 		\begin{itemize}[leftmargin=0em]
-			\item {\bf Languages:}{ Python, SQL, HTML, JavaScript, Matlab, LaTeX}
-			\item {\bf Packages:}{ Nginx, Gunicorn, Pandas, Matplotlib, Seaborn, Flask, Numpy, Scipy, scikit-learn, statsmodels, XGBoost, TensorFlow, NLTK, TextBlob, SQLAlchemy, psycopg2, BeautifulSoup, Prophet, azure-storage-blob}
-			\item {\bf Tools:}{ Power BI, Git, Github, Anaconda, Jupyter Notebook, Spyder, Azure (PostgreSQL DB, VM, NSG, blob storage), MS SQL Management Studio, AWS (RDS, EC2, Route 53), Google Charts }
+			\item {\bf Summary: }{9+ years of modeling and data/signal processing for biomedical science, health and fitness}
+			\item {\bf Subjects: }{Engineering mechanics, biomechanics, sensing robotics, data science, machine learning, signal processing, mechatronics, software development, data engineering}
+			\item {\bf Programming:}{ Python, Matlab, mySQL, HTML, JavaScript, LaTeX, C\#}
+			\item {\bf Libraries}{ Nginx, Gunicorn, Pandas, Matplotlib, Seaborn, Flask, Numpy, Scipy, scikit-learn, statsmodels, XGBoost, PyTorch, TensorFlow, Keras, NLTK, TextBlob, SQLAlchemy, psycopg2, Prophet, azureml}
+			\item {\bf Tools:}{ Git, Github, Anaconda, Jupyter Notebook, Arduino IDE, Microsoft Azure ML pipeline and database} %(PostgreSQL DB, VM, NSG, blob storage), MS SQL Management Studio, AWS (RDS, EC2, Route 53), Google Charts }
 			
 		\end{itemize}
 	\end{rSection}
@@ -51,52 +69,57 @@
 		
 		\begin{itemize}[leftmargin=0em]
 			
-			\item {\bf Senior Data Scientist}{. 3M \textit{(Maplewood, MN, USA)}} \hfill {\em 02/2020 - present}\\
+			\item {\bf Data Scientist}{. Apple} \hfill {\em 09/2021 - present}\\
+			\vspace{-5mm}	
+				
+		\end{itemize}	
+		
+		\begin{itemize}[leftmargin=0em]
+			
+			\item {\bf Senior Data Scientist}{. 3M (Health Care Business Group) } \hfill {\em 02/2020 - 08/2021}\\
 			\vspace{-5mm}
 			\begin{itemize}
-				\setlength\itemsep{-1.75em}			
-				\item Provided \textbf{continuous production insights} for digital orthodontics  by \textbf{mining data} from treatment planning logs on \textit{Azure Blob Storage}. Created \textbf{insightful metrics, dashboards, Power BI reports} to summarize success rate and error code to \textbf{influence the model development}.\\
-				\item Employed \textbf{ML and other statistical techniques} to reduce costs from undesirable treatment outcome and \textbf{advise the team on potential improvements}, based on mechanically informed features.\\
-				\item Facilitated workshops for \textbf{training and exploration of new technologies}. Compiled documentation of knowledge and resources to \textbf{onboard and mentor new colleagues}.\\
-				\item \textbf{Communicated regularly with team members and stakeholders}. Contributed to Covid-19 Task Force.\\
-				\item Applied \textit{NLP custom classifier} to \textbf{prioritize response to customers}. \\
-				\item Constructed the \textbf{front-end} (\textit{html, css, javascript}) and \textbf{back-end} (\textit{flask, PostgreSQL}) of dashboards.\\
-				\item \textbf{Engineered data} by integrating \textit{Python} and \textit{C\#} via \textit{shell calls} to append to \textit{Azure PostgreSQL Database}.
-				
+				\setlength\itemsep{-1.5em}	
+				\item Integrated \underline{\smash{mechanics}} and \underline{\smash{health monitoring data}} to investigate biomechanical safety and treatment efficacy in digital orthodontic treatments (clear-tray aligners).\\
+				\item Automated \& customized prescriptions of tooth movement with \underline{\smash{neural network}} based on customer preference and historical data; deployed solutions to \underline{\smash{software production}} environment.\\
+				\item Piloted the division's first data science effort (certified \href{https://s3.amazonaws.com/scruminc-certs/SM-5132809}{\underline{\smash{Scrum Master}} \ExternalLink} and \href{http://s3.amazonaws.com/scruminc-certs/PO-0221178}{\underline{\smash{Product Owner}} \ExternalLink})--
+				\vspace{-2mm}
+				\begin{itemize}
+					\setlength\itemsep{-2em}	
+					\item outlined data opportunities; \underline{\smash{communicated visions}} with business leaders and stakeholders\\
+					\item automated data engineering for $\sim$60k patients; influenced data acquisition in production\\
+					\item assigned and oversaw 4 projects by interns and collaborators; \underline{\smash{co-inventor}} of one submitted patent
+				\end{itemize}				
 			\end{itemize}	
 		
-			\item {\bf Data Science Fellow}{. Insight Data Science \textit{(Remote)}} \hfill {\em 09/2019 - 10/2019}\\
+			\item {\bf Data Science Fellow}{. Insight Data Science} \hfill {\em 09/2019 - 10/2019}\\
 			\vspace{-5mm}
 			\begin{itemize}
-				\setlength\itemsep{-1.75em}
-				\item Deployed a \textbf{\href{https://aety.github.io/my-first-web-app}{web app}} recommending best air quality in Paris metro based on \textbf{time series forecasting}.\\
-				\item Utilized \textit{Prophet} to predict hourly PM10 (pollutant) concentration, with an SMAPE error of 12\%.
+				\setlength\itemsep{-1.5em}
+				\item Ideated and constructed the full-stack of a \href{https://aety.github.io/my-first-web-app}{\underline{\smash{web app}} \ExternalLink} in two weeks to recommend best time to ride Paris metro based on \underline{\smash{time series forecasting}} of hourly air quality (SMAPE error = 12\%).
 			\end{itemize}	
 			
-			\item {\bf Postdoctoral Researcher}{. Inst. for Intelligent Systems and Robotics \textit{(Paris, France)}} \hfill {\em 09/2018 - 08/2019}\\
+			\item {\bf Postdoctoral Researcher}{. University of Paris VI } \hfill {\em 09/2018 - 08/2019}\\
 			\vspace{-5mm}
 			\begin{itemize}
-				\setlength\itemsep{-1.75em}
-				\item  Trained \textbf{convolutional neural networks (CNN)} to reconstruct deformable 3D shape and orientation at $\sim$ 10 ms/frame (errors $<$1$^\circ$) with \textbf{medical images} (\textit{DICOM}) acquired from an operating room.\\
-				\item  Designed a system of \href{https://aety.github.io/active-catheter-tracking/}{markers} to track 3D intraoperative surgical tools from individual 2D X-ray images.
+				\setlength\itemsep{-1.5em}
+				\item Designed a system of markers that enabled 3D \href{https://hal.archives-ouvertes.fr/hal-02147132/}{\underline{\smash{surgical tool monitoring}} \ExternalLink} from 2D medical radiography with trained convolutional neural networks (CNN) (inference time $\sim$10 ms/frame; error$<$1$^\circ$).
 			\end{itemize}
-			
-			\item {\bf PhD Intern}{. Sanofi \textit{(Bridgewater, NJ, USA)}} \hfill {\em 06/2017 - 08/2017}\\
+
+			\item {\bf PhD Candidate}{. Northwestern University } \hfill {\em 09/2012 - 08/2018}\\
 			\vspace{-5mm}
 			\begin{itemize}
-				\setlength\itemsep{-1.75em}	
-				\item Collaborated with immunologists to revise a \textbf{simulation of asthma} formation and treatment.\\
-				\item Automated statistical tests and visualized on 10k entries of \textbf{clinical trial} data in \textit{Matlab}.
+				\setlength\itemsep{-1.5em}
+				\item Created a \href{https://ieeexplore.ieee.org/abstract/document/8487886}{\underline{\smash{rat whisker sensor}} \ExternalLink} that detects bending moments at micro-scale through \underline{\smash{contact-resistive}} sensing, integrated with \underline{\smash{Arduino Uno}}. Initiated a \$1M multi-university \href{https://www.nsf.gov/news/mmg/mmg_disp.jsp?med_id=132588}{grant \ExternalLink}.\\
+				\item \href{https://journals.physiology.org/doi/full/10.1152/jn.00869.2016}{\underline{\smash{Modeled the dynamics}} \ExternalLink} of rat whiskers as piece-wise tapered beams under contact or airflow.\\ \item \href{https://www.sciencedirect.com/science/article/pii/S0960982219317014}{\underline{\smash{Predicted neural signals}} \ExternalLink} (R\textsuperscript{2}=0.93) from 420 sets of 100-ms data sampled at 10kHz.
 			\end{itemize}
-			
-			\item {\bf PhD Candidate}{. Northwestern University \textit{(Evanston, IL, USA)}} \hfill {\em 09/2012 - 08/2018}\\
+		
+			\item {\bf PhD Intern}{. Sanofi } \hfill {\em 06/2017 - 08/2017}\\
 			\vspace{-5mm}
 			\begin{itemize}
-				\setlength\itemsep{-1.75em}
-				\item Built a \textbf{\href{https://aety.github.io/rat-whisker-sensor/}{rat whisker sensor}} to measure forces at micro-scale, initiating a \$1M multi-university \href{https://www.nsf.gov/news/mmg/mmg_disp.jsp?med_id=132588}{grant}.\\
-				\item Modeled rat whiskers as tapered beams in \textit{Matlab} and \textit{Python} to quantify whisker mechanics under contact or airflow. \textbf{Predicted neural signals} (R\textsuperscript{2}=0.93) from 420 sets of 100-ms data sampled at 10kHz.
-			\end{itemize}
-			
+				\setlength\itemsep{-1.5em}	
+				\item Collaborated with immunologists on asthma modeling and statistics of n = 10k \underline{\smash{clinical data}}.
+			\end{itemize}	
 			
 		\end{itemize}
 		
@@ -110,14 +133,32 @@
 	\begin{rSection}{Education}
 		%--copy and paste this region  if you need more--
 		\begin{itemize}[leftmargin=0em]
-			\item {\bf PhD in Mechanical Engineering}{. Northwestern University} \textit{(Evanston, IL, USA)} \hfill {\em 09/2012 - 08/2018} 
-			\vspace{-0mm}
-			\item {\bf Certificate of Management}{. Kellogg School of Management} \textit{(Evanston, IL, USA)} \hfill {\em 06/2016 - 08/2016} 
-			\vspace{-0mm}
-			\item {\bf BS in Mechanical Engineering}{. National Taiwan University} \textit{(Taipei, Taiwan)} \hfill {\em 09/2008 - 06/2012} 
-			\vspace{-0mm}
+			\item {\bf PhD in Mechanical Engineering}{. Northwestern University} \hfill {\em 09/2012 - 08/2018} 
+			\vspace{-2mm}
+			\item {\bf Certificate of Management}{. Kellogg School of Management} \hfill {\em 06/2016 - 08/2016} 
+			\vspace{-2mm}
+			\item {\bf BS in Mechanical Engineering}{. National Taiwan University} \hfill {\em 09/2008 - 06/2012} 
+			\vspace{-2mm}
 		\end{itemize}
 				
+	\end{rSection}
+	
+	%----------------------------------------------------------------------------------------
+	%	PUBLICATIONS
+	%----------------------------------------------------------------------------------------
+	\begin{rSection}{Publications}
+		%--copy and paste this region  if you need more--
+		\begin{itemize}[leftmargin=0em]
+			\item T Furuta, NE Bush, \textbf{AET Yang}, S Ebara, N Miyazaki, K Murata, D Hirai, K Shibata, MJZ Hartmann. The cellular and mechanical basis for response characteristics of identified primary afferents in the rat vibrissal system. \textit{Current Biology} (2020)
+			\item \textbf{AET Yang}, J Szewczyk. Marker-assisted image-based 3D monitoring for active catheters. \textit{The Hamlyn Symposium on Medical Robotics} (2019)
+			\item \textbf{AET Yang}, HM Belli, MJZ Hartmann. Quantification of vibrissal mechanical properties across the rat mystacial pad. \textit{Journal of neurophysiology} (2019)
+			\item \textbf{AET Yang}, MJZ Hartmann, S Bergbreiter. Contact-resistive sensing of touch and airflow using a rat whisker. \textit{7th IEEE International Conference on Biomedical Robotics} (2018)
+			\item HM Belli, \textbf{AET Yang}, CS Bresee, MJZ Hartmann. Variations in vibrissal geometry across the rat mystacial pad: base diameter, medulla, and taper. \textit{Journal of neurophysiology} (2017)
+			\item \textbf{AET Yang}, MJZ Hartmann. Whisking kinematics enables object localization in head-centered coordinates based on tactile information from a single vibrissa. \textit{Frontiers in behavioral neuroscience} (2016)
+			\item NE Bush, CL Schroeder, JA Hobbs, \textbf{AET Yang}, LA Huet, SA Solla. Decoupling kinematics and mechanics reveals coding properties of trigeminal ganglion neurons in the rat vibrissal system. \textit{eLife} (2016)
+			\vspace{-0mm}
+		\end{itemize}
+		
 	\end{rSection}
 	
 \end{document}----------------------------
